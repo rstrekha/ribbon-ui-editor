@@ -1,3 +1,5 @@
+/* RESETS */
+
 body {
   margin: 0;
 }
@@ -5,6 +7,8 @@ body {
 #ribbon {
   background-color: #eee;
 }
+
+/* RIBBON NAV BAR STYLES */
 
 nav .ribbon-tab-button {
   background-color: inherit;
@@ -21,6 +25,8 @@ nav .ribbon-tab-button.active-button {
 nav .ribbon-tab-button:hover {
   background-color: #ddd;
 }
+
+/* RIBBON TAB STYLES */
 
 #ribbon-container {
   position: relative;
@@ -139,6 +145,7 @@ nav .ribbon-tab-button:hover {
   line-height: 20px;
   font-size: 11px;
 }
+
 .ribbon-group .flexible-button-columns .label {
   grid-row: -2;
   grid-column: 1 / span 5;
@@ -147,6 +154,7 @@ nav .ribbon-tab-button:hover {
 .ribbon-group button:hover {
   background-color: #d1d1d1;
 }
+
 .ribbon-group button:active {
   background-color: #c0c0c0;
 }
