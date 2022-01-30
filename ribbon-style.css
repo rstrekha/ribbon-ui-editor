@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+}
+
+#ribbon {
+  background-color: #eee;
+}
+
+nav .ribbon-tab-button {
+  background-color: inherit;
+  border: none;
+  padding: 5px 10px;
+  margin: 0;
+  font-weight: 500;
+}
+
+nav .ribbon-tab-button.active-button {
+  text-decoration: underline;
+}
+
+nav .ribbon-tab-button:hover {
+  background-color: #ddd;
+}
+
+#ribbon-container {
+  position: relative;
+  height: 100px;
+}
+
+.ribbon-group-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+}
+
+.ribbon-group-container {
+  z-index: -1;
+}
+.ribbon-group-container:first-child {
+  z-index: 1;
+}
+
+.ribbon-group {
+  display: inline-grid;
+  position: relative;
+  margin: 0;
+  border-right: 1px solid #676767;
+  font: 12px system-ui;
+  user-select: none;
+  padding: 0 5px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.three-button-rows {
+  grid-template:
+    "btn     btn-row1" 25px
+    "btn     btn-row2" 25px
+    "btn     btn-row3" 25px
+    "caption caption " 20px
+    / 50px 125px;
+}
+
+.three-button-columns {
+  grid-template:
+    "btn-col1 btn-col2 btn-col3" 75px
+    "caption  caption  caption " 20px
+    / 50px 50px 50px;
+}
+
+.two-button-columns {
+  grid-template:
+    "btn-col1 btn-col2" 75px
+    "caption  caption " 20px
+    / 50px 50px;
+}
+
+.flexible-button-grid {
+  grid-template-rows: 25px 25px 25px [caption-start] 20px [caption-end];
+  grid-template-columns: [caption-start] auto 110px [caption-end];
+}
+
+.flexible-button-grid .button-columns-container {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.flexible-button-columns {
+  grid-template-rows: 75px [caption-start] 20px [caption-end];
+  grid-template-columns: [caption-start] auto [caption-end];
+}
+
+.flexible-button-columns .btn-col {
+  grid-row: 1 / 2;
+}
+
+.button-columns-container {
+  display: grid;
+  grid-auto-columns: minmax(50px, auto);
+  grid-column-gap: 2px;
+  grid-auto-flow: column;
+}
+
+.button-columns-container button {
+  line-height: 75px;
+}
+
+.button-columns-container button {
+  padding: 2px;
+}
+
+.ribbon-group button {
+  font: 12px system-ui;
+  line-height: 1.25;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.ribbon-group .main-button {
+  grid-area: btn;
+  align-self: stretch;
+  text-align: center;
+}
+
+.ribbon-group .edit-button-row {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.ribbon-group .label {
+  grid-area: caption;
+  text-align: center;
+  line-height: 20px;
+  font-size: 11px;
+}
+.ribbon-group .flexible-button-columns .label {
+  grid-row: -2;
+  grid-column: 1 / span 5;
+}
+
+.ribbon-group button:hover {
+  background-color: #d1d1d1;
+}
+.ribbon-group button:active {
+  background-color: #c0c0c0;
+}
+
+.ribbon-group .btn-row {
+  padding: 3px;
+  text-align: left;
+}
+
+.ribbon-group .btn-col {
+  padding: 2px;
+  text-align: center;
+}
+
+.ribbon-group .btn-col i {
+  font-size: 2.25em;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.ribbon-editor-button {
+  text-align: center;
+}
+
+.button-wrapper {
+  position: relative;
+}
+
+.button-wrapper span {
+  display: inline-block;
+  padding: 2px 3px;
+  font-size: 0.75em;
+  font-family: Arial;
+  background-color: #333;
+  color: #fff;
+  z-index: 2;
+}

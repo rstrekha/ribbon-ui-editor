@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+    <link href="fa-assets/css/all.css" rel="stylesheet"> <!-- Load all FontAwesome styles -->
+    <link href="ribbon-style.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="ribbon">
+    <nav id="ribbon-nav">
+        <span class="button-wrapper"><button class="ribbon-tab-button" data-tab-name="home" data-key-tooltip="R">Home</button></span>
+        <span class="button-wrapper"><button class="ribbon-tab-button" data-tab-name="testing" data-key-tooltip="L">Testing</button></span>
+    </nav>
+    
+    <div id="ribbon-container">
+        <div id="tab-home" class="ribbon-group-container active">
+            <div class="ribbon-group three-button-rows" id="grpCitations">
+                <button class="main-button" id="main-button-0">
+                    <i class="far fa-file"></i><br/>
+                    <span>Insert<br/>Citation</span>
+                </button>
+                <button class="btn-row" id="btn-row1">
+                    <i class="fas fa-address-book" id="icon1"></i>
+                    <span>Insert Attribution</span>
+                </button>
+                <button class="btn-row" id="btn-row2">
+                    <i class="fas fa-address-book" id="icon2"></i>
+                    <span>Update Citation</span>        
+                </button>
+                <button class="btn-row" id="btn-row3">
+                    <i class="fas fa-address-book" id="icon3"></i>
+                    <span>Annotate Reference</span>
+                </button>
+                <div class="label">Citations</div>
+            </div>
+            <div class="ribbon-group three-button-columns" id="grpHeaderFooter">
+                <button class="btn-col" tabindex="0" id="btn-col1">
+                    <i class="far fa-file"></i><br/><span>Insert<br/>Header</span>
+                </button>
+                <button class="btn-col" tabindex="0" id="btn-col2">
+                    <i class="far fa-file"></i><br/><span>Blank<br/>Page</span>
+                </button>
+                <button class="btn-col" tabindex="0" id="btn-col3">
+                    <i class="far fa-file"></i><br/><span>Insert<br/>Footer</span>
+                </button>
+                <div class="label">Header and Footer</div>
+            </div>
+            <div class="ribbon-group flexible-button-columns">
+                <div class="button-columns-container">
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-comment-alt"></i><br />
+                        <span>New<br />Comment</span>
+                    </button>
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-comment-alt"></i><br />
+                        <span>List<br />Comments</span>
+                    </button>
+                </div>
+                <div class="label">Comments</div>
+            </div>
+            <div class="ribbon-group flexible-button-grid">
+                <div class="button-columns-container">
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-comment-alt"></i><br />
+                        <span>Column<br />Button 1</span>
+                    </button>
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-comment-alt"></i><br />
+                        <span>Column<br />Button 2</span>
+                    </button>
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-comment-alt"></i><br />
+                        <span>Column<br />Button 3<br /></span>
+                    </button>
+                </div>
+                <button class="btn-row" id="btn-row1">
+                    <i class="fas fa-address-book" id="icon1"></i>
+                    <span>Button Row 1</span>
+                </button>
+                <button class="btn-row" id="btn-row2">
+                    <i class="fas fa-address-book" id="icon2"></i>
+                    <span>Button Row 2</span>        
+                </button>
+                <button class="btn-row" id="btn-row3">
+                    <i class="fas fa-address-book" id="icon3"></i>
+                    <span>Button Row 3</span>
+                </button>
+                <div class="label">Two Column Buttons</div>
+            </div>
+        </div>
+    
+        <div id="tab-testing" class="ribbon-group-container">
+            <div class="ribbon-group flexible-button-columns" id="grpCreate">
+                <div class="button-columns-container">
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-file"></i><br /><span>Test Plan</span>
+                    </button>
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-file"></i><br /><span>Test Case</span>
+                    </button>
+                </div>
+                <div class="label">Create</div>
+            </div>
+
+            <div class="ribbon-group flexible-button-columns">
+                <div class="button-columns-container">
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-file-word"></i><br />
+                        <span>Download<br />&#x25BE;</span>
+                    </button>
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-sticky-note"></i><br />
+                        <span>Annotate<br />&#x25BE;</span></button>
+                    <button class="btn-col" tabindex="0">
+                        <i class="far fa-file"></i><br />
+                        <span>Compare<br />&#x25BE;</span></button>
+                    <button class="btn-col" tabindex="0">
+                        <i class="fas fa-columns"></i><br/>
+                        <span>Share<br />&#x25BE;</span>
+                    </button>
+                </div>
+                <div class="label">Test Reports</div>
+            </div>
+            <div class="ribbon-group three-button-rows" id="grpPreview">
+                <button class="main-button">
+                    <i class="fas fa-bolt"></i><br />
+                    <span>Run<br />Tests</span>
+                </button>
+                <button class="btn-row" id="btn-row1">
+                    <i class="fas fa-chart-bar" id="icon1"></i>
+                    <span>Test Statistics</span>
+                </button>
+                <button class="btn-row" id="btn-row2">
+                    <i class="fas fa-list-ol" id="icon2"></i>
+                    <span>Test Case List</span>
+                </button>
+                <button class="btn-row" id="btn-row3">
+                    <i class="fas fa-check" id="icon3"></i>
+                    <span>Check for Errors</span>
+                </button>
+                <div class="label">Test Results</div>
+            </div>
+        </div>
+        
+        <div id="tab-third" class="ribbon-group-container">
+
+        </div>
+    
+    </div>
+</div>
+
+<button class="ribbon-editor-button-2"><i class="fas fa-bolt"></i><br/>Create<br />2-Button<br />Group</button>
+<button class="ribbon-editor-button-3"><i class="fas fa-bolt"></i><br />Create<br />3-Button<br />Group</button>
+<script src="main.js"></script>
+
+</body>
+</html>
